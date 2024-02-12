@@ -38,7 +38,9 @@
 
 
 
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
     <link rel="stylesheet" href="/css/post.css">
+
 
 
 
@@ -347,10 +349,12 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -368,15 +372,6 @@
                 </div>
                 <div class="col s5 right-align">
                     
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Markdown/" class="post-category">
-                                Markdown
-                            </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
 
@@ -384,7 +379,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-09-07
+                    2023-09-07
                 </div>
                 
 
@@ -486,12 +481,12 @@
 <p>第四步：打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key，把复制的内容粘贴进去，title随便填，保存即可，我们的公钥就添加成功了，设置好如下图：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/Waiting001/MyPic@img/img/202402122108240.avif" alt="img"></p>
 <p>第五步：检测是否设置成功：</p>
-<p>输入命令：  $ ssh -T <a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#x6f;&#x6d;">&#103;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#x6f;&#x6d;</a> # 注意邮箱地址不用改</p>
+<p>输入命令：  $ ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#109;">&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#109;</a> # 注意邮箱地址不用改</p>
 <p>如果提示Are you sure you want to continue connecting (yes&#x2F;no)?，输入yes，然后会看到：</p>
 <p>Hi liuxianan! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
 <p>看到这个信息说明SSH已配置成功！</p>
 <p>第六步：此时你还需要配置：</p>
-<p>$ git config –global user.name “Waiting001”&#x2F;&#x2F; 你的github用户名，非昵称$ git config –global user.email  “<a href="mailto:&#120;&#x78;&#x78;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;">&#120;&#x78;&#x78;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;</a>“&#x2F;&#x2F; 填写你的github注册邮箱</p>
+<p>$ git config –global user.name “Waiting001”&#x2F;&#x2F; 你的github用户名，非昵称$ git config –global user.email  “<a href="mailto:&#120;&#x78;&#x78;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#x6d;">&#120;&#x78;&#x78;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#x6d;</a>“&#x2F;&#x2F; 填写你的github注册邮箱</p>
 <h2 id="4-使用-hexo-搭建博客"><a href="#4-使用-hexo-搭建博客" class="headerlink" title="4.使用 hexo 搭建博客"></a>4.使用 hexo 搭建博客</h2><h3 id="4-1-初始化"><a href="#4-1-初始化" class="headerlink" title="4.1 初始化"></a>4.1 初始化</h3><p>第一步：在电脑的某个地方新建一个名为hexo的文件夹（名字可以随便取），比如我的是F:\study\hexocode，由于这个文件夹将来就作为你存放代码的地方，所以最好不要随便放</p>
 <p>第二步：在F:\study\hexocode文件夹下右键打开 Git Bash Here，输入hexo init 初始化</p>
 <ul>
@@ -689,7 +684,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2018/09/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">http://example.com/2018/09/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</a>
+                    <a href="http://example.com/2023/09/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">http://example.com/2023/09/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -848,7 +843,7 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2018/09/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+                <a href="/2023/09/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
                     <div class="card-image">
                         
                         
@@ -865,16 +860,12 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-07
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            sxn
                             
                         </span>
                     </div>
@@ -919,6 +910,87 @@
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 
