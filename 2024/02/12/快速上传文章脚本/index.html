@@ -5,7 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Waiting001">
-    <meta name="description" content="">
+    <meta name="description" content="Windows下一键发布Hexo静态博客功能描述通过制作一个windows的批处理文件，也就是.bat文件（不知道什么是批处理文件的可以百度）。然后在双击执行该批处理文件，实现自动发布写好的博客。
+前提条件
+首先你得是windows操作系统">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -396,7 +398,22 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="Windows下一键发布Hexo静态博客"><a href="#Windows下一键发布Hexo静态博客" class="headerlink" title="Windows下一键发布Hexo静态博客"></a>Windows下一键发布Hexo静态博客</h1><h2 id="功能描述"><a href="#功能描述" class="headerlink" title="功能描述"></a>功能描述</h2><p>通过制作一个windows的批处理文件，也就是.bat文件（不知道什么是批处理文件的可以百度）。然后在双击执行该批处理文件，实现自动发布写好的博客。</p>
+<h2 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h2><ol>
+<li>首先你得是windows操作系统；</li>
+<li>准备好Hexo静态博客环境（安装NodeJS，及博客程序）；</li>
+<li>配置文件_config.yml已经配置git；</li>
+<li>综上所述，本文适合对Hexo有一定了解并已经能够发布文章的用户。</li>
+</ol>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><p>前面啰嗦了那么多，现在直接上干货：</p>
+<ol>
+<li>新建一个.bat结尾的文档（可以先建一个txt文件，然后改扩展名）；</li>
+<li>在创建的.bat文档中输入以下内容</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">call  hexo clean</span><br><span class="line">call  hexo g</span><br><span class="line">call  hexo d</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
+
+<p>注释：call：表示执行命令；第一行：清理生成的内容；第二行：生成博客页面；第三行：发布博客；最后一行：是执行以上三条命令后，暂停等待用户按任意键结束（不加这条命令的话，执行完会直接退出，无法看到执行结果）。</p>
+
                 
             </div>
             <hr/>
@@ -422,7 +439,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2024/02/12/Untitled/">http://example.com/2024/02/12/Untitled/</a>
+                    <a href="http://example.com/2024/02/12/%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0%E8%84%9A%E6%9C%AC/">http://example.com/2024/02/12/%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0%E8%84%9A%E6%9C%AC/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -541,7 +558,7 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2024/02/12/Untitled/">
+                <a href="/2024/02/12/%E5%BF%AB%E9%80%9F%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0%E8%84%9A%E6%9C%AC/">
                     <div class="card-image">
                         
                         
